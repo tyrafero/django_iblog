@@ -27,3 +27,16 @@ class Contact(models.Model):
     
     def __str__(self):
         return self.name
+    
+
+class Information(models.Model):
+    address_1 = models.CharField(max_length= 500)
+    address_2 = models.CharField(max_length= 500)
+    phone = models.CharField(max_length=20)
+    time = models.CharField(max_length= 100)
+    email = models.EmailField(max_length=300)
+
+    def __str__(self):
+        return self.address_1
+    
+
